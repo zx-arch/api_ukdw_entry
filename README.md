@@ -12,6 +12,6 @@
 ![setup xampp iplocal 3](https://user-images.githubusercontent.com/69253132/205446384-50904caa-8965-4b31-868d-7ec3f377cc4c.png)
 
 - Uji Coba Postman :
-- 
+
 Get Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
 
