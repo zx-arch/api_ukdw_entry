@@ -3,6 +3,8 @@
 - Import db_iot.sql
 - Ubah host pada file koneksi.php dengan ip lokal jaringan anda, cara cek
   masuk cmd -> ketik 'ipconfig' copy ip address -> ubah nilai variabel host sesuai ip lokal yang tertera
+  ![cmd](https://user-images.githubusercontent.com/69253132/205446507-c25fb93b-113a-47d1-aff7-2d9ec6f1cc3a.png)
+
   
 Setup IP Lokal ke XAMPP :
 1. Masuk XAMPP Pilih 'Config' pada Module Apache
