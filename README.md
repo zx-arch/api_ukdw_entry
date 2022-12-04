@@ -6,7 +6,7 @@
 2. Masuk XAMPP Pilih 'Config' pada Module Apache
 ![setup xampp iplocal 1](https://user-images.githubusercontent.com/69253132/205445812-a276d6ea-697b-4bbb-9a44-ea653c06967d.png)
 3. Scroll dan cari keyword 'ServerName' dan 'ServerAdmin' dan ganti localhost menjadi ip lokal di cmd
-![setup xampp iplocal 2](https://user-images.githubusercontent.com/69253132/205446148-985c9793-c1ea-4d5d-9eec-880757937e70.png)
+![setup xampp iplocal 2](https://user-images.githubusercontent.com/69253132/205475127-1db7efb7-8e51-4f4c-bdf4-0dccf2de2c05.png)
 4. Save
 5. Masuk ke browser lalu ketik 'http://iplokal:8080/dashboard/', jika muncul dashboard xampp seperti dibawah maka telah berhasil
 ![setup xampp iplocal 3](https://user-images.githubusercontent.com/69253132/205446384-50904caa-8965-4b31-868d-7ec3f377cc4c.png)
