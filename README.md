@@ -13,8 +13,8 @@
 
 - Uji Coba Postman :
 
-Get Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
-![postman 1](https://user-images.githubusercontent.com/69253132/205446814-3a6e21c6-dc0b-4407-8995-47b9f87f5c3b.png)
-
 Post Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
 ![postman 2](https://user-images.githubusercontent.com/69253132/205474767-3a8210ab-3a7e-4832-b931-2f6084199ccb.png)
+
+Get Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
+![postman 3](https://user-images.githubusercontent.com/69253132/205474833-a429fac7-215b-4939-a34c-f08a95e1ec06.png)
