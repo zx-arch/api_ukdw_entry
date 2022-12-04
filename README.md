@@ -17,3 +17,4 @@ Get Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
 ![postman 1](https://user-images.githubusercontent.com/69253132/205446814-3a6e21c6-dc0b-4407-8995-47b9f87f5c3b.png)
 
 Post Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
+![postman 2](https://user-images.githubusercontent.com/69253132/205474767-3a8210ab-3a7e-4832-b931-2f6084199ccb.png)
