@@ -10,6 +10,7 @@
 4. Save
 5. Masuk ke browser lalu ketik 'http://iplokal:8080/dashboard/', jika muncul dashboard xampp seperti dibawah maka telah berhasil
 ![setup xampp iplocal 3](https://user-images.githubusercontent.com/69253132/205475205-4d17f5b2-e1a7-4cfc-a88b-4ab664c8b70b.png)
+6. Download source code diatas ke zip, lalu unzip ke folder htdocs
 
 - Uji Coba Postman :
 
