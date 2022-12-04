@@ -2,7 +2,7 @@
 
 - Setup IP Lokal ke XAMPP :
 1. Import db_iot.sql ke dbms, masuk cmd -> ketik 'ipconfig'
-![cmd](https://user-images.githubusercontent.com/69253132/205446507-c25fb93b-113a-47d1-aff7-2d9ec6f1cc3a.png)
+![cmd](https://user-images.githubusercontent.com/69253132/205475073-393ad812-8b1f-477d-b922-7e8a0da7c6e8.png)
 2. Masuk XAMPP Pilih 'Config' pada Module Apache
 ![setup xampp iplocal 1](https://user-images.githubusercontent.com/69253132/205445812-a276d6ea-697b-4bbb-9a44-ea653c06967d.png)
 3. Scroll dan cari keyword 'ServerName' dan 'ServerAdmin' dan ganti localhost menjadi ip lokal di cmd
