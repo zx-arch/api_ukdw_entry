@@ -2,7 +2,6 @@
 require_once "koneksi.php";
 class AktivitasUser 
 {
-
 	public  function get_aktivitas_users()
 	{
 		global $mysqli;
@@ -14,10 +13,10 @@ class AktivitasUser
 			$data[]=$row;
 		}
 		$response=array(
-							'status' => 1,
-							'message' =>'Get Aktivitas User Successfully.',
-							'data' => $data
-						);
+			'status' => 1,
+			'message' =>'Get Aktivitas User Successfully.',
+			'data' => $data
+		);
 		header('Content-Type: application/json');
 		echo json_encode($response);
 	}
@@ -37,49 +36,43 @@ class AktivitasUser
 			$data[]=$row;
 		}
 		$response=array(
-							'status' => 1,
-							'message' =>'Get Aktivitas User Successfully.',
-							'data' => $data
-						);
+			'status' => 1,
+			'message' =>'Get Aktivitas User Successfully.',
+			'data' => $data
+		);
 		header('Content-Type: application/json');
 		echo json_encode($response);
 		
 	}
 
 	public function insert_aktivitas_user()
-		{
-			global $mysqli;
-			$arrcheckpost = array('idCard' => '', 'status_aktivitas' => '', 'created_at' => '', 'room_access' => '');
-			$hitung = count(array_intersect_key($_POST, $arrcheckpost));
-			if($hitung == count($arrcheckpost)){
-				$currentDate = new date();
-				$result = mysqli_query($mysqli, "INSERT INTO aktivitas_user SET
-					idCard = '$_POST[idCard]',
-					status_aktivitas = '$_POST[status_aktivitas]',
-					created_at = '$currentDate->format('Y-m-d H:i:s')',
-					room_access = '$_POST[room_access]'");
-					
-				if($result)
-				{
-					$response=array(
-						'status' => 1,
-						'message' =>'Aktivitas User Added Successfully.'
-					);
-				}
-				else
-				{
-					$response=array(
-						'status' => 0,
-						'message' =>'Aktivitas User Addition Failed.'
-					);
-				}
-			}else{
-				$response=array(
-							'status' => 0,
-							'message' =>'Parameter Do Not Match'
-						);
-			}
-			header('Content-Type: application/json');
-			echo json_encode($response);
+	{
+		global $mysqli;
+		
+		if (isset($_POST['idCard']) AND isset($_POST['status_aktivitas']) AND isset($_POST['room_access'])) {
+			$currentDate = new DateTime();
+			$idCard = $_POST['idCard'];
+			$status_aktivitas = $_POST['status_aktivitas'];
+			$created_at = $currentDate->format('Y-m-d H:i:s');
+			$room_access = $_POST['room_access'];
+
+			$sql = "INSERT INTO aktivitas_user(idCard,status_aktivitas,created_at,room_access) VALUES ('$idCard','$status_aktivitas','$created_at','$room_access')";
+
+			//eksekusi
+			$mysqli->query($sql);
+			$response['responses']= [
+				"idCard"=>$idCard,
+				"status_aktivitas"=>$status_aktivitas,
+				"created_at"=>$created_at,
+				"room_access"=>$room_access,
+			];
+		} else{
+			$response=array(
+				'status' => 0,
+				'message' =>'Parameter Do Not Match'
+			);
 		}
+	header('Content-Type: application/json');
+	echo json_encode($response);
+	}
 }
