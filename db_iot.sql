@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 30, 2022 at 07:38 AM
+-- Generation Time: Dec 15, 2022 at 03:03 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.20
 
@@ -34,6 +34,13 @@ CREATE TABLE `aktivitas_user` (
   `created_at` datetime DEFAULT NULL,
   `room_access` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `aktivitas_user`
+--
+
+INSERT INTO `aktivitas_user` (`id`, `idCard`, `status_aktivitas`, `created_at`, `room_access`) VALUES
+(5, 'card-dsn25363774881', 'masuk', '2022-12-15 02:55:41', 'Lab FTI 3');
 
 -- --------------------------------------------------------
 
@@ -331,7 +338,8 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (206, '::1', 'admin12@gmail.com', 3, '2022-11-28 09:06:58', 1),
 (207, '::1', 'admin12@gmail.com', 3, '2022-11-28 21:56:03', 1),
 (208, '::1', 'admin12@gmail.com', 3, '2022-11-28 22:15:43', 1),
-(209, '::1', 'admin12@gmail.com', 3, '2022-11-29 02:52:44', 1);
+(209, '::1', 'admin12@gmail.com', 3, '2022-11-29 02:52:44', 1),
+(210, '::1', 'admin12@gmail.com', 3, '2022-12-04 15:46:10', 1);
 
 -- --------------------------------------------------------
 
@@ -411,7 +419,8 @@ INSERT INTO `export_data` (`id`, `username`, `csrf_test_name`, `json_data`) VALU
 (6, 'adminukdw', '39681ac8ed1630425fe40bfa3effa0f0', '[{\"idUser\":\"9\",\"idCardUser\":\"mhs-71190500\",\"nik\":\"0\",\"nim\":\"71190500\",\"alamat\":\"Jl. Merak no 10\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Maria Verena Putri Ngganggus\",\"username\":\"maria.verena\",\"created_at\":\"2022-10-25 20:27:14\",\"updated_at\":\"2022-11-05 09:28:15\",\"deleted_at\":null,\"foto_profil\":null,\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$V2h4YnNpaFhvOXhKa3JQQw$uqbCh7+kgR7piZiA7cb5kYPr0apEliU4r4J7t55WETQ\",\"email\":\"maria.verena@ti.ukdw.ac.id\",\"last_login\":\"2022-11-02 19:55:10\",\"active\":\"1\",\"id\":\"54\"},{\"idUser\":\"14\",\"idCardUser\":\"mhs-71190423\",\"nik\":\"0\",\"nim\":\"71190423\",\"alamat\":\"Jl. merak no 1\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Yacinthus Dheka Pratomo Putro\",\"username\":\"yacinthus.dheka\",\"created_at\":\"2022-10-18 15:08:50\",\"updated_at\":\"2022-11-10 08:04:46\",\"deleted_at\":null,\"foto_profil\":null,\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$aUx6WWpwb3p4ZWRDTmtzag$iMtw5oH7RijS59JCvmcX26d74epVnNiGUY2g+1i78wM\",\"email\":\"yacinthus.dheka@ti.ukdw.ac.id\",\"last_login\":\"0000-00-00 00:00:00\",\"active\":\"1\",\"id\":\"59\"}]'),
 (7, 'adminukdw', '2fd6dbe019e2ec3de0553cba14dbb296', '[{\"idUser\":\"9\",\"idCardUser\":\"mhs-71190500\",\"nik\":\"0\",\"nim\":\"71190500\",\"alamat\":\"Jl. Merak no 10\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Maria Verena Putri Ngganggus\",\"username\":\"maria.verena\",\"created_at\":\"2022-10-25 20:27:14\",\"updated_at\":\"2022-11-05 09:28:15\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"maria.verena@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$V2h4YnNpaFhvOXhKa3JQQw$uqbCh7+kgR7piZiA7cb5kYPr0apEliU4r4J7t55WETQ\",\"last_login\":\"2022-11-02 19:55:10\",\"active\":\"1\",\"id\":\"54\"},{\"idUser\":\"14\",\"idCardUser\":\"mhs-71190423\",\"nik\":\"0\",\"nim\":\"71190423\",\"alamat\":\"Jl. merak no 1\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Yacinthus Dheka Pratomo Putro\",\"username\":\"yacinthus.dheka\",\"created_at\":\"2022-10-18 15:08:50\",\"updated_at\":\"2022-11-10 08:04:46\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"yacinthus.dheka@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$aUx6WWpwb3p4ZWRDTmtzag$iMtw5oH7RijS59JCvmcX26d74epVnNiGUY2g+1i78wM\",\"last_login\":\"0000-00-00 00:00:00\",\"active\":\"1\",\"id\":\"59\"},{\"idUser\":\"32\",\"idCardUser\":\"mhs-12345678\",\"nik\":null,\"nim\":\"12345678\",\"alamat\":\"ssss\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":null,\"nidn\":null,\"nama\":\"hai\",\"username\":\"hai\",\"created_at\":\"2022-11-21 16:37:41\",\"updated_at\":\"2022-11-27 20:41:23\",\"deleted_at\":\"2022-11-27 20:41:23\",\"foto_profil\":\"20221115142720-940593-07da94727992beab8b4b4e0e854dde16.jpg\",\"email\":\"hai@gmail.com\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$RlVSWGlOdmZhOHZhVzl3VA$wcy+JvIEqqjXqBUqY+WckjwilBRQtwNfiHCUCJD5ZZA\",\"last_login\":null,\"active\":\"0\",\"id\":\"79\"}]'),
 (8, 'adminukdw', '084d39cc76b83e4cd93448970249d8eb', '[{\"idUser\":\"9\",\"idCardUser\":\"mhs-71190500\",\"nik\":\"0\",\"nim\":\"71190500\",\"alamat\":\"Jl. Merak no 10\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Maria Verena Putri Ngganggus\",\"username\":\"maria.verena\",\"created_at\":\"2022-10-25 20:27:14\",\"updated_at\":\"2022-11-05 09:28:15\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"maria.verena@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$V2h4YnNpaFhvOXhKa3JQQw$uqbCh7+kgR7piZiA7cb5kYPr0apEliU4r4J7t55WETQ\",\"last_login\":\"2022-11-02 19:55:10\",\"active\":\"1\",\"id\":\"54\"},{\"idUser\":\"14\",\"idCardUser\":\"mhs-71190423\",\"nik\":\"0\",\"nim\":\"71190423\",\"alamat\":\"Jl. merak no 1\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Yacinthus Dheka Pratomo Putro\",\"username\":\"yacinthus.dheka\",\"created_at\":\"2022-10-18 15:08:50\",\"updated_at\":\"2022-11-10 08:04:46\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"yacinthus.dheka@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$aUx6WWpwb3p4ZWRDTmtzag$iMtw5oH7RijS59JCvmcX26d74epVnNiGUY2g+1i78wM\",\"last_login\":\"0000-00-00 00:00:00\",\"active\":\"1\",\"id\":\"59\"},{\"idUser\":\"32\",\"idCardUser\":\"mhs-12345678\",\"nik\":null,\"nim\":\"12345678\",\"alamat\":\"ssss\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"room_access\":\"ALFTI3\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":null,\"nidn\":null,\"nama\":\"hai\",\"username\":\"hai\",\"created_at\":\"2022-11-21 16:37:41\",\"updated_at\":\"2022-11-27 20:41:23\",\"deleted_at\":\"2022-11-27 20:41:23\",\"foto_profil\":\"20221115142720-940593-07da94727992beab8b4b4e0e854dde16.jpg\",\"email\":\"hai@gmail.com\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$RlVSWGlOdmZhOHZhVzl3VA$wcy+JvIEqqjXqBUqY+WckjwilBRQtwNfiHCUCJD5ZZA\",\"last_login\":null,\"active\":\"0\",\"id\":\"79\"}]'),
-(9, 'adminukdw', 'a3ba2b66b5ef9465aa3079f091ab8a51', '[]');
+(9, 'adminukdw', 'a3ba2b66b5ef9465aa3079f091ab8a51', '[]'),
+(10, 'adminukdw', '8cd3759cc9c3ae4b179a86c78f2a290e', '[{\"idUser\":\"9\",\"idCardUser\":\"mhs-71190500\",\"nik\":\"0\",\"nim\":\"71190500\",\"alamat\":\"Jl. Merak no 10\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"permission_room\":\"Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Maria Verena Putri Ngganggus\",\"username\":\"maria.verena\",\"created_at\":\"2022-10-25 20:27:14\",\"updated_at\":\"2022-11-05 09:28:15\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"maria.verena@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$V2h4YnNpaFhvOXhKa3JQQw$uqbCh7+kgR7piZiA7cb5kYPr0apEliU4r4J7t55WETQ\",\"last_login\":\"2022-11-02 19:55:10\",\"active\":\"1\",\"id\":\"54\"},{\"idUser\":\"14\",\"idCardUser\":\"mhs-71190423\",\"nik\":\"0\",\"nim\":\"71190423\",\"alamat\":\"Jl. merak no 1\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":\"0\",\"nidn\":\"0\",\"nama\":\"Yacinthus Dheka Pratomo Putro\",\"username\":\"yacinthus.dheka\",\"created_at\":\"2022-10-18 15:08:50\",\"updated_at\":\"2022-11-10 08:04:46\",\"deleted_at\":null,\"foto_profil\":null,\"email\":\"yacinthus.dheka@ti.ukdw.ac.id\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$aUx6WWpwb3p4ZWRDTmtzag$iMtw5oH7RijS59JCvmcX26d74epVnNiGUY2g+1i78wM\",\"last_login\":\"0000-00-00 00:00:00\",\"active\":\"1\",\"id\":\"59\"},{\"idUser\":\"32\",\"idCardUser\":\"mhs-12345678\",\"nik\":null,\"nim\":\"12345678\",\"alamat\":\"ssss\",\"no_hp\":\"2147483647\",\"tipe_user\":\"Mahasiswa\",\"permission_room\":\"Lab FTI 3, Lab FTI 4\",\"nip\":null,\"nidn\":null,\"nama\":\"hai\",\"username\":\"hai\",\"created_at\":\"2022-11-21 16:37:41\",\"updated_at\":\"2022-11-27 20:41:23\",\"deleted_at\":\"2022-11-27 20:41:23\",\"foto_profil\":\"20221115142720-940593-07da94727992beab8b4b4e0e854dde16.jpg\",\"email\":\"hai@gmail.com\",\"password_hash\":\"$argon2id$v=19$m=2048,t=4,p=4$RlVSWGlOdmZhOHZhVzl3VA$wcy+JvIEqqjXqBUqY+WckjwilBRQtwNfiHCUCJD5ZZA\",\"last_login\":null,\"active\":\"0\",\"id\":\"79\"}]');
 
 -- --------------------------------------------------------
 
@@ -553,7 +562,11 @@ INSERT INTO `log_aktivitas` (`id`, `username`, `aktivitas`, `tanggal`, `tipe_use
 (83, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-11-28 22:07:00', 'Admin'),
 (84, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-11-29 10:56:05', 'Admin'),
 (85, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-11-29 11:15:43', 'Admin'),
-(86, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-11-29 13:01:25', 'Admin');
+(86, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-11-29 13:01:25', 'Admin'),
+(87, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-12-04 15:43:16', 'Admin'),
+(88, 'adminukdw', 'Admin Melakukan Logout', '2022-12-04 15:45:47', 'Admin'),
+(89, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-12-04 15:46:11', 'Admin'),
+(90, 'adminukdw', 'Admin Melakukan Aktivitas Login', '2022-12-04 16:42:12', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -691,7 +704,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`, `last_login`) VALUES
-(3, 'admin12@gmail.com', 'adminukdw', '$argon2id$v=19$m=2048,t=4,p=4$dGEwdXdZdjBwdWdEZVNoWQ$V65vHFqUUAeBT+mvt27Fr31CxPnZNk6xgrE3eEY0y0U', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-10-11 12:39:55', '2022-11-29 02:52:44', NULL, '2022-10-13 07:17:29'),
+(3, 'admin12@gmail.com', 'adminukdw', '$argon2id$v=19$m=2048,t=4,p=4$N251YTNnWUJZYVJTQTAzbg$ar35GkDUyeeIbyYvtOy0eL2GJpIrFP8I0nFY1biSxnw', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-10-11 12:39:55', '2022-12-04 15:46:10', NULL, '2022-10-13 07:17:29'),
 (53, 'tes1234@gmail.com', 'tes', '$argon2id$v=19$m=2048,t=4,p=4$UFNIeVJkT0dOcTUxOERNMg$BNEWaPYrj3g1n1+UETBhbFqj2uMxOX3dUX70dxwMDcw', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-10-29 20:21:17', '2022-10-31 22:53:20', NULL, '0000-00-00 00:00:00'),
 (54, 'maria.verena@ti.ukdw.ac.id', 'maria.verena', '$argon2id$v=19$m=2048,t=4,p=4$V2h4YnNpaFhvOXhKa3JQQw$uqbCh7+kgR7piZiA7cb5kYPr0apEliU4r4J7t55WETQ', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-10-25 20:27:14', '2022-11-05 09:28:15', NULL, '2022-11-02 19:55:10'),
 (59, 'yacinthus.dheka@ti.ukdw.ac.id', 'yacinthus.dheka', '$argon2id$v=19$m=2048,t=4,p=4$aUx6WWpwb3p4ZWRDTmtzag$iMtw5oH7RijS59JCvmcX26d74epVnNiGUY2g+1i78wM', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-11-02 20:20:03', '2022-11-10 08:04:46', NULL, '0000-00-00 00:00:00'),
@@ -832,7 +845,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `aktivitas_user`
 --
 ALTER TABLE `aktivitas_user`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `auth_activation_attempts`
@@ -850,7 +863,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=210;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
@@ -874,7 +887,7 @@ ALTER TABLE `auth_tokens`
 -- AUTO_INCREMENT for table `export_data`
 --
 ALTER TABLE `export_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `hapus_user`
@@ -886,7 +899,7 @@ ALTER TABLE `hapus_user`
 -- AUTO_INCREMENT for table `log_aktivitas`
 --
 ALTER TABLE `log_aktivitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -927,7 +940,6 @@ ALTER TABLE `aktivitas_user`
 --
 ALTER TABLE `smartcard`
   ADD CONSTRAINT `smartcard_fk` FOREIGN KEY (`idCardUser`) REFERENCES `user` (`idCardUser`);
-
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
