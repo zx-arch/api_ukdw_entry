@@ -1,9 +1,7 @@
 # Cara Pakai API UKDW Entry
 
 - Setup Server Local :
-1. Import db_iot.sql ke dbms, masuk cmd -> ketik 'ipconfig'
-![cmd](https://user-images.githubusercontent.com/69253132/205475073-393ad812-8b1f-477d-b922-7e8a0da7c6e8.png)
-2. Masuk XAMPP Pilih 'Config' pada Module Apache
+1. Import db_iot.sql ke dbms, Masuk XAMPP Pilih 'Config' pada Module Apache, Lalu Pilih httpd-xampp.conf
 ![setup xampp iplocal 1](https://user-images.githubusercontent.com/69253132/205445812-a276d6ea-697b-4bbb-9a44-ea653c06967d.png)
 3. Scroll dan cari keyword 'ServerName' dan 'ServerAdmin' dan ganti localhost menjadi ip lokal di cmd
 ![setup xampp iplocal 2](https://user-images.githubusercontent.com/69253132/205475127-1db7efb7-8e51-4f4c-bdf4-0dccf2de2c05.png)
