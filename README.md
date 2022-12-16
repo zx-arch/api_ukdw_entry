@@ -1,6 +1,6 @@
 # Cara Pakai API UKDW Entry
 
-- Setup IP Lokal ke XAMPP :
+- Setup Server Local :
 1. Import db_iot.sql ke dbms, masuk cmd -> ketik 'ipconfig'
 ![cmd](https://user-images.githubusercontent.com/69253132/205475073-393ad812-8b1f-477d-b922-7e8a0da7c6e8.png)
 2. Masuk XAMPP Pilih 'Config' pada Module Apache
@@ -14,8 +14,10 @@
 
 - Uji Coba Postman :
 
-Post Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
+Post Data : 'http://iplokal/api_ukdw_entry/aktivitas_user'
 ![postman 2](https://user-images.githubusercontent.com/69253132/205474767-3a8210ab-3a7e-4832-b931-2f6084199ccb.png)
 
-Get Data : 'http://iplokal:8080/api_ukdw_entry/aktivitas_user'
+Get Data : 'http://iplokal/api_ukdw_entry/aktivitas_user'
 ![postman 3](https://user-images.githubusercontent.com/69253132/205474833-a429fac7-215b-4939-a34c-f08a95e1ec06.png)
+
+Note : Apabila sudah ada server lokal maka source code di github ini tidak perlu di download!!
