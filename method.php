@@ -55,17 +55,32 @@ class AktivitasUser
 			$status_aktivitas = $_POST['status_aktivitas'];
 			$created_at = $currentDate->format('Y-m-d H:i:s');
 			$room_access = $_POST['room_access'];
-
-			$sql = "INSERT INTO aktivitas_user(idCard,status_aktivitas,created_at,room_access) VALUES ('$idCard','$status_aktivitas','$created_at','$room_access')";
-
-			//eksekusi
-			$mysqli->query($sql);
-			$response['responses']= [
-				"idCard"=>$idCard,
-				"status_aktivitas"=>$status_aktivitas,
-				"created_at"=>$created_at,
-				"room_access"=>$room_access,
-			];
+			$getroomaccess = "SELECT * FROM user LEFT JOIN smartcard ON smartcard.idCardUser=user.idCardUser WHERE smartcard.idCard='$idCard'";
+			$checkroom = "SELECT * FROM user LEFT JOIN smartcard ON smartcard.idCardUser=user.idCardUser WHERE smartcard.idCard='$idCard' AND user.permission_room LIKE '%$room_access%'";
+			$checkcard = "SELECT * FROM smartcard WHERE idCard='$idCard'";
+			if (mysqli_fetch_object($mysqli->query($checkcard))===null) {
+				$response=array(
+					'status' => 0,
+					'message' =>"ID Card is not Registered"
+				);
+			} else {
+				if (mysqli_fetch_object($mysqli->query($checkroom))===null) {
+					$response=array(
+						'status' => 0,
+						'message' =>"Room $room_access is not Permitted, Room Allowed is ".mysqli_fetch_object($mysqli->query($getroomaccess))->permission_room
+					);
+				} else {
+					$sql = "INSERT INTO aktivitas_user(idCard,status_aktivitas,created_at,room_access) VALUES ('$idCard','$status_aktivitas','$created_at','$room_access')";
+			
+					$mysqli->query($sql);
+					$response['responses']= [
+						"idCard"=>$idCard,
+						"status_aktivitas"=>$status_aktivitas,
+						"created_at"=>$created_at,
+						"room_access"=>$room_access,
+					];
+				}
+			}
 		} else{
 			$response=array(
 				'status' => 0,
