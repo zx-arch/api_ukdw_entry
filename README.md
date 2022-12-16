@@ -18,4 +18,4 @@ Post Data : 'http://iplokal/api_ukdw_entry/aktivitas_user'
 Get Data : 'http://iplokal/api_ukdw_entry/aktivitas_user'
 ![postman 3](https://user-images.githubusercontent.com/69253132/205474833-a429fac7-215b-4939-a34c-f08a95e1ec06.png)
 
-Note : Apabila sudah ada server lokal maka source code di github ini tidak perlu di download!!
+Note : Apabila sudah ada server lokal maka hanya perlu di uji coba postman saja, pastikan komputer client terhubung ke jaringan yang sama !!
